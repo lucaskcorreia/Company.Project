@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.4" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Company.Project.Core\Company.Project.Core.csproj" />
+    <ProjectReference Include="..\Company.Project.Domain\Company.Project.Domain.csproj" />
+    <ProjectReference Include="..\Company.Project.Infra\Company.Project.Infra.csproj" />
+    <ProjectReference Include="..\Company.Project.Services\Company.Project.Services.csproj" />
+  </ItemGroup>
+
+</Project>
